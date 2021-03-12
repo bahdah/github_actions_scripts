@@ -16,5 +16,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           owner: llvm
-          base: main
-          head: main
+          base: master
+          head: master
+          auto_approve: true
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
